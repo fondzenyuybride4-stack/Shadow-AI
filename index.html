@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHADOW AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <style>
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#080b16">
+
+<link rel="manifest" href="manifest.json">
+        body {
+            background: #080b16;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #00e5ff;
+        }
+
+        .box {
+            background: #151d30;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        button {
+            background: #00bcd4;
+            color: black;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>SHADOW AI</h1>
+    <p>DUAL INTELLIGENCE SYSTEM</p>
+
+    <div class="box">
+        <h2>Welcome, Shadow Monarch</h2>
+        <p>ChatGPT + DeepSeek</p>
+
+        <input type="text"
+        placeholder="Ask Shadow AI..."
+        id="question">
+
+        <br><br>
+
+        <button onclick="sendMessage()">
+            SEND
+        </button>
+
+        <p id="answer"></p>
+    </div>
+
+    <script>
+        function sendMessage() {
+            let question =
+            document.getElementById("question").value;
+
+            if (question === "") {
+                alert("Enter a question first!");
+                return;
+            }
+
+            document.getElementById("answer").innerHTML =
+            "Your question: " + question +
+            "<br>AI connection coming soon...";
+        }
+    </script>
+<script src="script.js"></script>
+</body>
+</html>
